@@ -1,0 +1,14 @@
+<view class='bottomLine' wx:for="{{list}}">
+<navigator url='../newsDetail/newsDetail?id={{item.id}}'>
+    <view class='newsBox clearfix'>
+      <view class='newsImg'>
+        <image lazy-load='true' mode='aspectFill' src='{{item.coverImage}}'></image>
+      </view>
+      <view class='newsInfo'>
+        <view class='newsTitle'>{{item.title}}</view>
+        <view class='newsDetail'>{{item.summary}}</view>
+      </view>
+    </view>
+  </navigator>
+</view>
+<i-load-more wx:if="{{bottomisshow}}" tip="加载中，请稍后" loading="{{ bottomLoading }}" />

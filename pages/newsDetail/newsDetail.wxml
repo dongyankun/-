@@ -1,0 +1,17 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='content'>
+  <view class='title'>{{detail.title}}</view>
+  <view class='summary'>{{detail.summary}}</view>
+  <view class='author'>责任编辑：{{detail.articleWriter}}</view>
+  <view class='wxParse news-content'>
+    <template is="wxParse" data="{{wxParseData:content.nodes}}"></template>
+    <view class='statement'>
+      <view wx:if="{{detail.articleSourceTitle=='新学说'}}">本文系 <view class='strong'>新学说</view> 原创文章，转载须经授权，违者将依法追究责任。</view>
+      <view wx:else>本文系 <view class='strong'>新学说</view> 转载文章，来源 <view class='strong'>{{detail.articleSourceTitle}} </view></view>
+    </view>
+  </view>
+  <!-- <view class="myshare"><button class="sharebutton" open-type="share"><i-icon type="send" size="24" color="#fff" /></button></view> -->
+  <view class='share iconfont icon-fenxiang1'>
+    <button class='shareBtn' open-type="share"></button>
+  </view>
+</view>

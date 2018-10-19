@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/home/index/index",
+    "pages/home/detail/index",
+    "pages/news/news",
+    "pages/newsDetail/newsDetail",
+    "pages/outfit/index/index",
+    "pages/outfit/detail/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+   "tabBar": {
+    "selectedColor":"#215089",
+    "list": [{
+      "pagePath": "pages/home/index/index",
+      "text": "国际学校库",
+      "iconPath":"static/flag.png",
+      "selectedIconPath":"static/flag2.png"
+    }, {
+      "pagePath": "pages/outfit/index/index",
+      "text": "教育机构库",
+      "iconPath":"static/3.png",
+      "selectedIconPath":"static/4.png"
+    }, {
+      "pagePath": "pages/news/news",
+      "text": "教育资讯",
+      "iconPath":"static/7.png",
+      "selectedIconPath":"static/8.png"
+    }]
+  },
+  "window":{
+    
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#215089",
+    "navigationBarTitleText": "国际学校四库全书",
+    "navigationBarTextStyle":"white"
+  }
+}

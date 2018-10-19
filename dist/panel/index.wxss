@@ -1,0 +1,3 @@
+.i-panel{position:relative;overflow:hidden}.i-panel-title{margin:0 10px;
+border-radius:3px;
+background:#22508b;font-size:16px;line-height:1;color:#fff;line-height:30px;text-indent:20px;}.i-panel-title-hide-top{padding-top:0}.i-panel-content{position:relative;background:#fff;overflow:hidden}.i-panel-content::after{content:'';position:absolute;top:0;left:0;width:200%;height:200%;transform:scale(.5);transform-origin:0 0;pointer-events:none;box-sizing:border-box;border:0 solid #e9eaec;border-top-width:1px;border-bottom-width:1px}.i-panel-without-border::after{border:0 none}

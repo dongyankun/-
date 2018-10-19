@@ -1,0 +1,37 @@
+<!-- 搜索框 -->
+<!--<view bindtap="hideview" wx:if="{{hideviews}}" style="width:100%;height:100%;position:fixed;z-index:9998;top:0;background:rgba(0,0,0,0.5);"></view>-->
+<scroll-view scroll-y='true' class="item" style="height:{{height}}px" bindscrolltolower='lower'>
+   <!--<view wx:if="{{hideviews}}"  bindtap="hideview" style="position:fixed;z-index:99999;right:25px;top:0px;"><image style="width: 240px; height: 180px;box-shadow: 0 2px 10px 3px rgba(13,17,27,.1);" src="../../../static/guanzhu.png"></image></view>-->
+  <view class="main">
+    <view class="search-view">
+      <icon class="searchIcon" type="search" size="16"/>
+      <input class='Search_Input_class' placeholder="请输入国际学校或地区" confirm-type='search' type='text'  bindconfirm="bindSearchEvent">{{searchKey}}</input>
+      <view  wx:if="{{totalstatus}}" class="totalNum">搜索到{{listLength}}条数据</view>
+    </view>
+  </view>
+  <view wx:if="{{liststatus}}" class="nothavemore" >没搜索到，换个关键词试试</view>
+  <view wx:for="{{list}}" wx:for-item="itemName">
+    <navigator url="../detail/index?id={{itemName.id}}" >
+        <view class="i-card">
+        <view class="i-card-header" style="flex-direction:row;">
+            <view>
+                <image lazy-load='true' class="i-card-header-thumb" src="{{ (itemName.institutionLogo=='0'||itemName.schoolLogo==null)?'../../../static/1.png':'http://data.xinxueshuo.cn'+itemName.schoolLogo }}" mode="aspectFit" />
+            </view>
+            <view class="i-card-right">
+              <view class="i-card-right-top">
+              <view>{{ itemName.schoolName }}</view>
+          </view>
+          <view class="i-card-right-bottom">
+              <view class="i-card-right-bottom-label"><view class="label-top">学校类型</view><view class="label-bottom" style="color:#0084ff">{{itemName.schoolProperties}}</view></view>
+              <view class="i-card-right-bottom-label"><view class="label-top">成立时间</view><view class="label-bottom">{{itemName.foundedTime}}</view></view>
+              <view class="i-card-right-bottom-label"><view class="label-top">省份</view><view class="label-bottom">{{itemName.areas}}</view></view>
+            </view>
+        </view>
+        </view>
+        
+        <view class="i-class i-card-footer">课程 : {{ itemName.schoolSystem }}</view>
+    </view>
+    </navigator>
+  </view>
+  <i-load-more wx:if="{{bottomisshow}}" tip="加载中，请稍后" loading="{{ bottomLoading }}" />
+</scroll-view>

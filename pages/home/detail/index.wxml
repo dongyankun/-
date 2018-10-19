@@ -1,0 +1,65 @@
+<view>
+	<view class="myshare"><button class="sharebutton" open-type="share"><i-icon type="send" size="24" color="#fff" /></button></view>
+	<view class="myshare2" bindtap="clickMe"><button class="sharebutton"><i-icon type="homepage" size="24" color="#fff" /></button></view>
+	<view class="topColor"></view>
+	<view class="i-card">
+	         <view class="i-card-left">
+	         	<view class="i-card-left-top"><view class="topwhite"></view><view class="outTopBlue"><view class="topBlue"></view></view></view>
+                <image class="i-card-header-thumb" src="{{ (outfitdetail.institutionLogo=='0'||outfitdetail.schoolLogo==null||outfitdetail.schoolLogo=='暂无')?'../../../static/1.png':'http://data.xinxueshuo.cn'+outfitdetail.schoolLogo }}" mode="aspectFit" />
+            </view>
+	        <view class="i-card-right">
+		        <view class="i-card-right-top">
+			    	<view>{{ outfitdetail.schoolName }}</view>
+				</view>
+				<view class="i-card-right-bottom">
+			    	 <view class="i-card-right-bottom-label"><view class="label-top">学校类型</view><view class="label-bottom" style="color:#0084ff">{{outfitdetail.schoolProperties}}</view></view>
+		              <view class="i-card-right-bottom-label"><view class="label-top">成立时间</view><view class="label-bottom">{{outfitdetail.foundedTime}}</view></view>
+		              <view class="i-card-right-bottom-label"><view class="label-top">省份</view><view class="label-bottom">{{outfitdetail.areas}}</view></view>
+			    </view>
+			</view>
+	</view>
+  	<view class="viewT" title="基本信息">
+  		<view class="viewTC">基本信息</view>
+  		<view class="i-input"><view class="i-input-tittle">建校时间</view><view class="i-input-content">{{ outfitdetail.foundedTime }}</view></view>
+  		<view class="i-input"><view class="i-input-tittle">学制</view><view class="i-input-content">{{ outfitdetail.schoolSystem }}</view></view>
+  		<view class="i-input"><view class="i-input-tittle">地址</view><view class="i-input-content">{{ outfitdetail.areas }} {{ outfitdetail.areas02 }} {{ outfitdetail.areas03 }}</view></view>
+  		<view class="i-input"><view class="i-input-tittle">幼儿园学费</view><view class="i-input-content">{{ outfitdetail.tuition01 }}</view></view>
+  		<view class="i-input"><view class="i-input-tittle">小学学费</view><view class="i-input-content">{{ outfitdetail.tuition02 }}</view></view>
+  		<view class="i-input"><view class="i-input-tittle">初中学费</view><view class="i-input-content">{{ outfitdetail.tuition03 }}</view></view>
+  		<view class="i-input"><view class="i-input-tittle">高中学费</view><view class="i-input-content">{{ outfitdetail.tuition04 }}</view></view>
+  		<view class="i-input"><view class="i-input-tittle">官网</view><view class="i-input-content">{{ outfitdetail.website }}</view></view>
+  		<view class="i-input"><view class="i-input-tittle">电话</view><view class="i-input-content">{{ outfitdetail.telephone }}</view></view>
+  		
+	</view>
+	<view class="viewT" title="课程&学生">
+		<view class="viewTC">课程&学生</view>
+		<view class="i-input"><view class="i-input-tittle">开设的国际课程</view><view class="i-input-content">{{ outfitdetail.course }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">国际课程认证时间</view><view class="i-input-content">{{ outfitdetail.interCourseFoundedTime }}</view></view>
+		
+		<view class="i-input"><view class="i-input-tittle">获得的认证</view><view class="i-input-content">{{ outfitdetail.authentication=='暂无'?'暂无认证':outfitdetail.authentication }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">学生总容量（国际部）</view><view class="i-input-content">{{ outfitdetail.studentCapacity }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">毕业班人数（国际部）</view><view class="i-input-content">{{ outfitdetail.graduatedStuNum }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">学生主要国籍</view><view class="i-input-content">{{ outfitdetail.stuDominantNationality }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">在校生总人数（国际部）</view><view class="i-input-content">{{ outfitdetail.studentNumAll }}</view></view>
+	</view>
+	<view class="viewT" title="师资力量">
+		<view class="viewTC">师资力量</view>
+		<view class="i-input"><view class="i-input-tittle">总教师数量</view><view class="i-input-content">{{ outfitdetail.teacherNum }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">师生比</view><view class="i-input-content">{{ outfitdetail.teacherStuRatio }}</view></view>
+	</view>
+	<view class="viewT" title="基建">
+		<view class="viewTC">基建</view>
+		<view class="i-input"><view class="i-input-tittle">占地面积(亩)</view><view class="i-input-content">{{ outfitdetail.coveredArea }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">建筑面积（平方米）</view><view class="i-input-content">{{ outfitdetail.builtArea }}</view></view>
+		
+	</view>
+	<view class="viewT" title="硬件设施">
+		<view class="viewTC">硬件设施</view>
+		<view class="i-input"><view style="text-align:left;text-indent:20px;padding-left:5px;" class="i-input-content">{{ outfitdetail.hardware }}</view></view>
+	</view>
+	<view class="viewT" title="备注">
+		<view class="viewTC">备注</view>
+		<view class="i-input"><view style="text-align:left;text-indent:20px;padding-left:5px;" class="i-input-content">{{ outfitdetail.remark }}</view></view>
+	</view>
+	<view class="footer">查看更多请访问在线四库全书:data.xinxueshuo.cn</view>
+</view>

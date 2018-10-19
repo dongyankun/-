@@ -1,0 +1,46 @@
+<view>
+	<view class="myshare"><button class="sharebutton" open-type="share"><i-icon type="send" size="24" color="#fff" /></button></view>
+	<view class="myshare2" bindtap="clickMe"><button class="sharebutton"><i-icon type="homepage" size="24" color="#fff" /></button></view>
+	<view class="i-card">
+	    <view class="i-card-header" style="flex-direction:row;">
+	        <view>
+	            <image class="i-card-header-thumb" src="{{ (outfitdetail.institutionLogo=='0'||outfitdetail.institutionLogo==null||outfitdetail.institutionLogo=='暂无')?'../../../static/1.png':outfitdetail.institutionLogo }}" mode="aspectFit" />
+	        </view>
+	        <view class="i-card-right">
+		        <view class="i-card-right-top">
+			    	<view>{{ outfitdetail.name }}</view>
+				</view>
+				<view class="i-card-right-bottom">
+			    	<view class="i-card-right-bottom-label"><view class="label-top">机构类型</view><view class="label-bottom" style="color:# 0084ff">{{outfitdetail.type}}</view></view>
+			    	<view class="i-card-right-bottom-label"><view class="label-top">成立时间</view><view class="label-bottom">{{outfitdetail.foundedTime}}</view></view>
+			    	<view class="i-card-right-bottom-label"><view class="label-top">省份</view><view class="label-bottom">{{outfitdetail.areas}}</view></view>
+			    </view>
+			</view>
+	    </view>
+	</view>
+  	<i-panel title="基本信息">
+  		<view class="i-input"><view class="i-input-tittle">服务简介</view><view class="i-input-content">{{ outfitdetail.service }}</view></view>
+  		<view class="i-input"><view class="i-input-tittle">官网</view><view class="i-input-content">{{ outfitdetail.website }}</view></view>
+  		<view class="i-input"><view class="i-input-tittle">地址</view><view class="i-input-content">{{ outfitdetail.areas }} {{outfitdetail.areas02}}{{outfitdetail.areas03}}</view></view>
+  		
+	</i-panel>
+	<i-panel title="联系方式">
+		<view class="i-input"><view class="i-input-tittle">个人姓名</view><view class="i-input-content">{{ outfitdetail.contactname }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">个人职位</view><view class="i-input-content">{{ outfitdetail.contactposition }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">联系电话</view><view class="i-input-content">{{ outfitdetail.contactphone }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">联系邮箱</view><view class="i-input-content">{{ outfitdetail.contactmail }}</view></view>
+	</i-panel>
+	<i-panel title="其他">
+		<view class="i-input"><view class="i-input-tittle">投资信息</view><view class="i-input-content">{{ outfitdetail.investment }}</view></view>
+		<view class="i-input"><view class="i-input-tittle">过往服务学校</view><view class="i-input-content">{{ outfitdetail.servedschool }}</view></view>
+	    
+	</i-panel>
+	<i-panel title="详细介绍">
+		<view class="textleft">{{ outfitdetail.introduction }}</view>
+	    
+	</i-panel>
+	<i-panel title="备注">
+		<view class="textleft">{{ outfitdetail.introduction }}</view>
+	</i-panel>
+	<view class="footer">查看更多请访问在线四库全书:data.xinxueshuo.cn</view>
+</view>

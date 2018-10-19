@@ -1,0 +1,36 @@
+<!--index.wxml-->
+
+<scroll-view scroll-y='true' class="item" style="height:{{height}}px" bindscrolltolower='lower'>
+	<view class="main">
+	    <view class="search-view">
+	      <icon class="searchIcon" type="search" size="16"/>
+	      <input class='Search_Input_class' placeholder="请输入国际学校机构等关键词" confirm-type='search' type='text'  bindconfirm="bindSearchEvent">{{searchKey}}</input>
+	      <view  wx:if="{{totalstatus}}" class="totalNum">搜索到{{listLength}}条数据</view>
+	    </view>
+	</view>
+	<view wx:if="{{liststatus}}" class="nothavemore" >没搜索到，换个关键词试试</view>
+  	<view wx:for="{{list}}" wx:for-item="itemName">
+	    <navigator url="../detail/index?id={{itemName.id}}" >
+	      	<view class="i-card">
+			    <view class="i-card-header" style="flex-direction:row;">
+			        <view>
+			            <image class="i-card-header-thumb" src="{{ (itemName.institutionLogo=='0'||itemName.institutionLogo==null)?'../../../static/1.png':itemName.institutionLogo }}" mode="aspectFit" />
+			        </view>
+			        <view class="i-card-right">
+				        <view class="i-card-right-top">
+					    	<view>{{ itemName.name }}</view>
+						</view>
+						<view class="i-card-right-bottom">
+					    	<view class="i-card-right-bottom-label"><view class="label-top">机构类型</view><view class="label-bottom" style="color:#0084ff">{{itemName.type}}</view></view>
+					    	<view class="i-card-right-bottom-label"><view class="label-top">成立时间</view><view class="label-bottom">{{itemName.foundedTime==0?'暂无':itemName.foundedTime}}</view></view>
+					    	<view class="i-card-right-bottom-label"><view class="label-top">省份</view><view class="label-bottom">{{itemName.areas}}</view></view>
+					    </view>
+					</view>
+			    </view>
+			    
+			    <view class="i-class i-card-footer">简介 : {{ itemName.service }}</view>
+			</view>
+	    </navigator>
+	</view>
+	<i-load-more wx:if="{{bottomisshow}}" tip="加载中，请稍后" loading="{{ bottomLoading }}" />
+</scroll-view>

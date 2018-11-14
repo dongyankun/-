@@ -2,12 +2,16 @@
   "pages":[
     "pages/home/index/index",
     "pages/home/detail/index",
+    "pages/myInfor/myInfor",
     "pages/news/news",
     "pages/newsDetail/newsDetail",
     "pages/outfit/index/index",
     "pages/outfit/detail/index",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/dashboard/about/about",
+    "pages/dashboard/errmsg/errmsg",
+    "pages/dashboard/feedback/feedback"
   ],
    "tabBar": {
     "selectedColor":"#215089",
@@ -24,6 +28,11 @@
     }, {
       "pagePath": "pages/news/news",
       "text": "教育资讯",
+      "iconPath":"static/7.png",
+      "selectedIconPath":"static/8.png"
+    },{
+      "pagePath": "pages/myInfor/myInfor",
+      "text": "我的",
       "iconPath":"static/7.png",
       "selectedIconPath":"static/8.png"
     }]

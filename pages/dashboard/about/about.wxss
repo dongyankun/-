@@ -1,0 +1,17 @@
+
+.main{
+line-height:30px;
+padding:10px 15px;
+font-size:20px;
+}
+.title{
+	line-height:30px;
+	padding:10px 15px 0 15px;
+	font-size:22px;
+	coloe:#333;
+}
+.time{
+	padding:5px 15px 0px 15px;
+	color:#999;
+	font-size:12px;
+}

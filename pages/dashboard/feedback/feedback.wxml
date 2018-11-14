@@ -1,0 +1,7 @@
+<view class="main">
+	<view class="label">1.您对新学说数据库有什么建议？</view>
+	<textarea class="active active2" bindinput="active1" value="{{activeData}}" placeholder-class="phcolor" placeholder="请输入建议" auto-focus />
+	<view class="label">2.请留下你的联系方式</view>
+	<textarea class="active" bindinput="active2" value="{{activeData2}}" placeholder-style="font-size:16px;line-height:20px;" placeholder="请输入联系方式" />
+	<button class="makesure" bindtap="makesure" type='primary'>确认提交</button>
+</view>

@@ -1,0 +1,23 @@
+<view class="main">
+  <button wx:if="{{authorizationstatus}}" bindtap="authorization" open-type="getUserInfo" class="authorization">请授权头像等信息，以便为您提供更好的服务></button>
+  <view class="user">
+    <image style="width: 100%;"src="../../static/back.jpg"></image>
+    <view class="userLogo"><image style="width: 80px;height:80px;border-radius:50%;"src="{{avatarUrl}}"></image><view class="usrername">{{nickName}}</view></view>
+    <view class="xinxueshuo">新学说在线四库全书</view>
+  </view>
+  <view class="linkBtn linkBtn2">
+    <i-cell-group>
+      <i-cell title="关于" is-link url="/pages/dashboard/about/about"></i-cell>
+    </i-cell-group>  
+  </view>
+  <view class="linkBtn">
+    <i-cell-group>
+      <i-cell title="意见反馈" is-link url="/pages/dashboard/feedback/feedback"></i-cell>
+    </i-cell-group>
+  </view>
+  <view class="linkBtn">
+    <i-cell-group>
+      <i-cell title="报告数据错误" is-link url="/pages/dashboard/errmsg/errmsg"></i-cell>
+    </i-cell-group>
+  </view>
+</view>

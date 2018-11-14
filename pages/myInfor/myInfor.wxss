@@ -1,0 +1,46 @@
+.authorization{
+  font-size:14px;
+  color:#999;
+  line-height:35px;
+  text-align:center;
+  background:#f7f6fb;
+}
+.main{
+  background:#f6f2f3;
+  height:100%;
+}
+.linkBtn{
+  margin:2px 0;
+}
+.userLogo{
+  width:80px;
+  heightL:80px;
+  position:absolute;
+  left:50%;
+  margin-left:-40px;
+  top:50%;
+  margin-top:-80px;
+}
+.user{
+  position:relative;
+}
+.usrername{
+  color:#fff;
+  text-align:center;
+  margin-top:20px;
+}
+.xinxueshuo{
+  width:80%;
+  height:60px;
+  position:absolute;
+  left:10%;
+  bottom:-25px;
+  background:#fff;
+  border-radius:10px;
+  z-index:99999;
+  text-align:center;
+  line-height:60px;
+}
+.linkBtn2{
+  margin-top:40px;
+}

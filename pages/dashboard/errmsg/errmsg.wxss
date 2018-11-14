@@ -1,0 +1,48 @@
+.authorization{
+  font-size:14px;
+  color:#999;
+  line-height:35px;
+  text-align:center;
+  background:#f7f6fb;
+}
+.main{
+  
+  height:100%;
+}
+.linkBtn{
+  margin:2px 0;
+}
+.active{
+    width:90%;
+    height: 22px;
+    margin:10px 5%;
+    font-size: 14px;
+    color: #555;
+    line-height:20px;
+    border: 1px solid #575757;
+    border-radius: 4px;
+    background:#f8f8f8;
+    padding:10px 5px;
+}
+.active2{
+	height:170px;
+}
+.label{
+	color:#333;
+	font-size:20px;
+	text-indent:5px;
+	color:#333;
+	margin:15px 0;
+}
+.placeholderStyle{
+	font-size:16px;
+	line-height:20px;
+}
+.makesure{
+	width:60%;
+	margin:50px auto;
+	background:#80848f;
+}
+.phcolor{
+	color:#808080;font-size:16px;margin:10px 5px;
+}

@@ -21,10 +21,13 @@ Page({
             var country = userInfo.country
             that.setData({
               nickName:nickName,
-              avatarUrl:avatarUrl
+              avatarUrl:avatarUrl,
+              authorizationstatus:false
             })
             wx.hideLoading()
             let code=wx.getStorageSync('code')
+            wx.setStorageSync('nickName', nickName)
+            wx.setStorageSync('avatarUrl', avatarUrl)
             // wx.request({
             //   url: 'http://192.168.0.54:8080/nsi-1.0/wxPay/decodeUserInfo.do', 
             //   data: {
@@ -42,6 +45,9 @@ Page({
             //   }
             // })
             console.log(userInfo,nickName,avatarUrl,gender,province,city,country)
+        },
+        complete:function(){
+          wx.hideLoading()
         }
     })
   },
@@ -57,7 +63,16 @@ Page({
           authorizationstatus:!data['scope.userInfo']
         })
         if(data['scope.userInfo']){
-          that.authorization()
+          
+          if(wx.getStorageSync('nickName')){
+            that.setData({
+              nickName:wx.getStorageSync('nickName'),
+              avatarUrl:wx.getStorageSync('avatarUrl')
+            })
+          }else{
+            that.authorization()
+          }
+          
         }
       }
     })

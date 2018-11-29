@@ -32,9 +32,9 @@
       "selectedIconPath":"static/8.png"
     },{
       "pagePath": "pages/myInfor/myInfor",
-      "text": "我的",
-      "iconPath":"static/7.png",
-      "selectedIconPath":"static/8.png"
+      "text": "关于",
+      "iconPath":"static/9.png",
+      "selectedIconPath":"static/10.png"
     }]
   },
   "window":{

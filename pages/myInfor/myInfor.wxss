@@ -25,9 +25,14 @@
   position:relative;
 }
 .usrername{
+position:absolute;
+top:50%;
+text-align:center;
+width:100%;
   color:#fff;
   text-align:center;
   margin-top:20px;
+  font-size:22px;
 }
 .xinxueshuo{
   width:80%;
@@ -40,6 +45,7 @@
   z-index:99999;
   text-align:center;
   line-height:60px;
+  color:#333;
 }
 .linkBtn2{
   margin-top:40px;

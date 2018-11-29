@@ -1,7 +1,28 @@
-<view >
-	<view class="title">四库全书小程序简介</view>
+<view class="outMain">
+	<view class="title">国际学校四库全书小程序简介</view>
 	<view class="time">2018-11-14 10:32</view>
-  	<view class="main">国际学校四库全书 是新学说研发的国际教育行业信息数据系统。包括国际学校数据库、教育机构数据库、国际教育人才数据库，国际教育项目数据库。
-“国际学校四库全书”小程序 仅展示国际学校数据库、教育机构数据库 的部分信息。如需查看全部信息，请访问 data.xinxueshuo.cn，查看更多信息。
-如果您在使用时遇到任何问题，或数据不准确，欢迎与我们联系，新学说会及时处理，并邮件通知您问题处理的进度。</view>
+  	<view class="main">国际学校四库全书 是新学说研发的国际教育行业信息数据系统。包括国际学校数据库、教育机构数据库、国际教育人才数据库，国际教育项目数据库。</view>
+  	<view class="main">
+  		“国际学校四库全书”小程序 仅展示国际学校数据库、教育机构数据库 的部分信息。如需查看全部信息，请访问 data.xinxueshuo.cn，查看更多信息。
+  	</view>
+  	<view class="main">
+  		如果您在使用时遇到任何问题，或数据不准确，欢迎与我们联系，新学说会及时处理，并邮件通知您问题处理的进度。
+  	</view>
+  	<view class="bottomInfor">
+  		<i-cell-group>
+	      <i-cell title="微信公众号" value="NSI_cm"></i-cell>
+	    </i-cell-group>
+  	</view>
+  	<view class="bottomInfor">
+  		<i-cell-group>
+	      <i-cell title="联系我们" value="info@xinxueshuo.cn"></i-cell>
+	    </i-cell-group>
+  	</view>
+  	<view class="bottomInfor">
+  		<i-cell-group>
+	      <i-cell title="官方网站" value="www.xinxueshuo.cn"></i-cell>
+	    </i-cell-group>
+  	</view>
+    
+	<view class="footer">北京新学说文化传媒有限公司版权所有 </view>
 </view>

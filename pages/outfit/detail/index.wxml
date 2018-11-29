@@ -42,5 +42,5 @@
 	<i-panel title="备注">
 		<view class="textleft">{{ outfitdetail.introduction }}</view>
 	</i-panel>
-	<view class="footer">查看更多请访问在线四库全书:data.xinxueshuo.cn</view>
+	<view class="footer">查看更多请访问在线四库全书:data.xinxueshuo.cn <navigator style="display:inline;color:#4b92ea;" url="/pages/dashboard/errmsg/errmsg" hover-class="navigator-hover">报告错误</navigator></view>
 </view>

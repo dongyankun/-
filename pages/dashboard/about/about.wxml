@@ -20,9 +20,14 @@
   	</view>
   	<view class="bottomInfor">
   		<i-cell-group>
-	      <i-cell title="官方网站" value="www.xinxueshuo.cn"></i-cell>
+	      <i-cell title="新学说官网" value="www.xinxueshuo.cn"></i-cell>
 	    </i-cell-group>
   	</view>
+    <view class="bottomInfor">
+      <i-cell-group>
+        <i-cell title="国际学校四库全书" value="data.xinxueshuo.cn"></i-cell>
+      </i-cell-group>
+    </view>
     
 	<view class="footer">北京新学说文化传媒有限公司版权所有 </view>
 </view>

@@ -44,7 +44,7 @@ Page({
         bottomLoading: true,
     })
     wx.request({
-      url: 'https://data.xinxueshuo.cn/nsi-1.0/manager/institution/list.do?searchKey='+wxdata.searchKey+'&pageNum='+wxdata.pageNum+'&pageSize=10',
+      url: 'https://data.xinxueshuo.cn/nsi-1.0/institution/list.do?searchKey='+wxdata.searchKey+'&pageNum='+wxdata.pageNum+'&pageSize=10',
       header: {
         'content-type': 'application/json'
       },

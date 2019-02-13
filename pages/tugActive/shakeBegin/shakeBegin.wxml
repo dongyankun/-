@@ -1,0 +1,19 @@
+<view class='bodyBg'  style='background:{{bodyColor}}'>
+  <view class='userBox'>
+    <image class='userImg' src='{{portrait}}'></image>
+    <!-- <text class='userName'>{{nickname}}</text> -->
+  </view>
+  <view class='countBox'>
+    <view class='tips animated wobble infinite'>
+      <text class='tipswprd tips1'>摇</text> 
+      <text class='tipswprd tips2'>一</text>
+      <text class='tipswprd tips3'>摇</text>
+    </view>
+    <view class='countNum'>{{count}}<view class='word'>米</view></view>
+    <view class="bubbling {{upBubbel?'hideBubble':''}}">+1</view>
+    <!-- <view class="bubbling">+1</view> -->
+    <view class='hasTime'>剩余时间<text> {{maxTime}}</text>s</view>
+  </view>
+  <view class='bigCircle' style='background-color:{{circleColor}}'></view>
+  <view class='bigCircle01' style='background-color:{{circleColor}}'></view>
+</view>

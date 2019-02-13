@@ -1,0 +1,25 @@
+<view class='bodyBg'  style='background:{{bodyColor}}'>
+  <view class='coverBg' style="background-image:url('https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/2018battle/bodyBg.png');background-size:cover;background-position:center"></view>
+  <view class='content'>
+  <view class='userInfo'>
+    <view><image src='{{portrait}}' class='userImg'></image></view>
+    <view class='userName'>{{nickname}}</view>
+  </view>
+  <view class='titleBg'><image src='https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/2018battle/titlebg.png' class='titleImg'></image></view>
+    <view class='contentTop'>
+      <!-- <view class='camp' style='color:{{fontColor}}'>您贡献了</view> -->
+      <view class='camp'>您贡献了</view>
+      <view class='total'><view class='totalNum' style='background-color:{{fontColor}}'>{{myCount}}</view>米     </view>
+    </view>
+    <view class='contentBottom'>
+      <view class='contentLeft'>
+        <view class='contentTitle'>长度</view>
+        <view class='count'>{{myCount}}<view class='word'>米</view></view> 
+      </view>
+      <view class='contentRight'>
+        <view class='contentTitle'>时间</view>
+        <view class='time'>{{maxTime}}<view class='word seconds'>s</view></view> 
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,3 @@
+<view>
+摇了{{count}}次
+</view>

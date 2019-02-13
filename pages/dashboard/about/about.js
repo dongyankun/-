@@ -21,22 +21,22 @@ Page({
               avatarUrl:avatarUrl
             })
             let code=wx.getStorageSync('code')
-            wx.request({
-              url: 'http://192.168.0.54:8080/nsi-1.0/wxPay/decodeUserInfo.do', 
-              data: {
-                type:'1',
-                code:code,
-                iv:res.iv,
-                encryptedData:res.encryptedData
-              },
-              method:'post',             
-              header: {
-              'content-type': 'application/x-www-form-urlencoded'
-              },
-              success(res) {
-                console.log(res)
-              }
-            })
+            // wx.request({
+            //   url: 'http://192.168.0.54:8080/nsi-1.0/wxPay/decodeUserInfo.do', 
+            //   data: {
+            //     type:'1',
+            //     code:code,
+            //     iv:res.iv,
+            //     encryptedData:res.encryptedData
+            //   },
+            //   method:'post',             
+            //   header: {
+            //   'content-type': 'application/x-www-form-urlencoded'
+            //   },
+            //   success(res) {
+            //     console.log(res)
+            //   }
+            // })
 
 
 

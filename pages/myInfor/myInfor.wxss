@@ -25,12 +25,11 @@
   position:relative;
 }
 .usrername{
-position:absolute;
-top:50%;
-text-align:center;
-width:100%;
-  color:#fff;
+  position:absolute;
+  top:50%;
   text-align:center;
+  width:100%;
+  color:#fff;
   margin-top:20px;
   font-size:22px;
 }
@@ -49,4 +48,7 @@ width:100%;
 }
 .linkBtn2{
   margin-top:40px;
+}
+.section{
+  width: 100%;
 }

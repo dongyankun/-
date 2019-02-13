@@ -1,0 +1,41 @@
+<view>
+	
+	<view class="section tc">
+		<video
+			poster="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/test/yearVideo/xxs_cover.jpg"
+			class="myVideo"
+			id="myVideo"
+			title="未来已来"
+			src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/test/yearVideo/xxs.mp4"
+			controls
+		></video>
+	</view>
+	<view>
+		<view class="main main1">
+		2015年的北京，灰的恐怖行走在各个角落，寻找属于新学说的方向</view>
+		<view class="main main2">
+			2016年，在中关村创业密集区，诞生了一位新宝宝
+而她又会长成什么样子？
+		</view>
+		<view class="main main3">
+			2017年，新学说日益成熟，初具规模
+		</view>
+		<view class="main main4">
+			2018年，新学说继续成长，将“不可能”变为现实！
+		</view>
+		<view class="main main5">
+			<view class="main">
+				那么，究竟什么是新学说？
+			</view>
+			<view class="main">
+				未来已来，敬请期待
+			</view>
+			<view class="main">
+				……
+			</view>
+		</view>
+		
+
+	</view>
+	<view class="footer">北京新学说文化传媒有限公司版权所有 </view>
+</view>

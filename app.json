@@ -1,6 +1,11 @@
 {
   "pages":[
+    
     "pages/home/index/index",
+    "pages/tugActive/shakeBegin/shakeBegin",
+    "pages/tugActive/shakeCount/shakeCount",
+    "pages/tugActive/camp/camp",
+    "pages/tugActive/tugActive",
     "pages/home/detail/index",
     "pages/myInfor/myInfor",
     "pages/news/news",
@@ -11,7 +16,10 @@
     "pages/logs/logs",
     "pages/dashboard/about/about",
     "pages/dashboard/errmsg/errmsg",
-    "pages/dashboard/feedback/feedback"
+    "pages/dashboard/feedback/feedback",
+    "pages/dashboard/nsiVideo/index",
+    "pages/tugActive/log/log"
+   
   ],
    "tabBar": {
     "selectedColor":"#215089",

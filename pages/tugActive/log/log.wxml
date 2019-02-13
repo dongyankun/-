@@ -1,0 +1,9 @@
+<view style="height:100%;background:url('https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/2018battle/bg01.jpg');background-size:cover;background-position:center">
+  <!-- <navigator url='../camp/camp'> -->
+    <button open-type='getUserInfo' class='confirmBtn' bindtap='confirmLog'>点击授权登录</button>
+  <!-- </navigator>  -->
+    <view class='loading' wx-if='{{isLoading}}'>
+      <image class='loadingImg' src="../../../static/loading.gif"></image>
+      <view class='isLoading'>加载中...</view>
+    </view>
+</view>

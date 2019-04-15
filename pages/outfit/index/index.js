@@ -14,8 +14,12 @@ Page({
     totalstatus:false,
     bottomLoading:false,
     bottomisshow:true,
+    status:true,
   },
   bindSearchEvent: function (e) {
+    if(this.data.status){
+      return
+    }
     this.setData({
       searchKey: e.detail.value,
     })
@@ -39,6 +43,7 @@ Page({
   },
   ajaxlist(){
     var that=this
+    that.data.status=true
     let wxdata=this.data
     that.setData({
         bottomLoading: true,
@@ -73,6 +78,7 @@ Page({
             listLength:res.data.count,
             list: flagdata,
         })
+        that.data.status=false
       }
     })
   },

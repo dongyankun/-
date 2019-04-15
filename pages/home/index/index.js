@@ -15,13 +15,18 @@ Page({
     bottomisshow:true,
     hideviews:false,
     yongjiu:false,
+    status:true,
   },
   bindSearchEvent: function (e) {
+    if(this.data.status){
+      return
+    }
     this.setData({
       searchKey: e.detail.value,
     })
     this.data.pageNum=1
-    this.data.list.length=0
+    this.data.list=[]
+    console.log(this.data.list)
     this.ajaxlist()
   },
   
@@ -48,6 +53,7 @@ Page({
   },
   ajaxlist(){
     var that=this
+    that.data.status=true
     let wxdata=this.data
     that.setData({
         bottomLoading: true,
@@ -65,6 +71,7 @@ Page({
       },
       success(res) {
         let flagdata=wxdata.list.concat(res.data.data.list)
+        console.log(flagdata)
         if(flagdata.length==0){
           that.setData({
             liststatus: true,
@@ -88,6 +95,7 @@ Page({
             listLength:res.data.data.total,
             list: flagdata,
         })
+        that.data.status=false
       }
     })
   },

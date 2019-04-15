@@ -23,8 +23,11 @@
   </view>
    <view class="linkBtn">
     <i-cell-group>
-      <i-cell title="啥是新学说" is-link url="/pages/dashboard/nsiVideo/index"></i-cell>
+      <i-cell title="联系客服" is-link url="/pages/dashboard/service/service"></i-cell>
     </i-cell-group>
   </view>
-  
+  <view class="myAdvert">
+    <image bindtap="gotoAther" mode="widthFix" style="vertical-align: top;display: block; width: 100%;"src="../../static/advert.jpg"></image>
+  </view>
+      <!-- <button open-type="contact" bindcontact="handleContact">客服</button> -->
 </view>

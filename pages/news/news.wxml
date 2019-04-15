@@ -2,11 +2,11 @@
 <navigator url='../newsDetail/newsDetail?id={{item.id}}'>
     <view class='newsBox clearfix'>
       <view class='newsImg'>
-        <image lazy-load='true' mode='aspectFill' src='{{item.coverImage}}'></image>
+        <image lazy-load='true' mode='aspectFill' src='{{item.coverImage}}?x-oss-process=image/resize,p_30'></image>
       </view>
       <view class='newsInfo'>
         <view class='newsTitle'>{{item.title}}</view>
-        <view class='newsDetail'>{{item.summary}}</view>
+        <view class=' newsDetail'>{{item.summary}}</view>
       </view>
     </view>
   </navigator>

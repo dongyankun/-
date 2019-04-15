@@ -4,6 +4,11 @@ Page({
     nickName:'',
     avatarUrl:''
   },
+  gotoAther(){
+    wx.navigateToMiniProgram({
+      appId:'wx239dd449dc72d145'
+    })
+  },
   authorization(){
     wx.showLoading({
       title:'加载中'

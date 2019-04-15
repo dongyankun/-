@@ -19,7 +19,7 @@
             </view>
             <view class="i-card-right">
               <view class="i-card-right-top">
-              <view>{{ itemName.schoolName }}</view>
+              <view style="overflow:hidden;height:21px;word-break: break-all;text-overflow: ellipsis;">{{ itemName.schoolName }}</view>
           </view>
           <view class="i-card-right-bottom">
               <view class="i-card-right-bottom-label"><view class="label-top">学校类型</view><view class="label-bottom" style="color:#0084ff">{{itemName.schoolProperties}}</view></view>

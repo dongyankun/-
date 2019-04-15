@@ -10,6 +10,18 @@ Page({
       icon: 'loading',
     })
     var that = this
+    setTimeout(function(){
+        wx.request({
+          url: 'https://data.xinxueshuo.cn/nsi-1.0/manager/article/getStatistics.do?articleId=' + option.id, 
+          data: {},
+          header: {
+            'content-type': 'application/json' // 默认值
+          },
+          success(res) {
+            
+          }
+        })
+    },5000)
     wx.request({
       url: 'https://data.xinxueshuo.cn/nsi-1.0/article/detail.do?articleId=' + option.id, 
       data: {},

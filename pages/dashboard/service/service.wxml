@@ -1,0 +1,13 @@
+<view class="main">
+
+    <view class='iconView'>
+      <icon class="iconfont icon-kefu"></icon>
+    </view>
+
+    <button class="serviceButton" open-type="contact" bindcontact="handleContact">接入客服</button>
+
+    <view class='textPhone'>
+        <text>客服电话：15010927730</text>
+    </view>
+
+</view>
